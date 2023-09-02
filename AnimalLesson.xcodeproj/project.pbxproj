@@ -16,6 +16,10 @@
 		81D432812A9F774E008DC501 /* AnimalLessonUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81D432802A9F774E008DC501 /* AnimalLessonUITestsLaunchTests.swift */; };
 		81D432902A9F784F008DC501 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81D4325D2A9F774A008DC501 /* AppDelegate.swift */; };
 		81D432912A9F784F008DC501 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81D4325F2A9F774A008DC501 /* SceneDelegate.swift */; };
+		81DE79762AA39FE100A588F6 /* QuestionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81DE79752AA39FE100A588F6 /* QuestionsViewController.swift */; };
+		81DE79782AA3A4EB00A588F6 /* FinalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81DE79772AA3A4EB00A588F6 /* FinalViewController.swift */; };
+		81DE797C2AA3B5B400A588F6 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81DE797B2AA3B5B400A588F6 /* Question.swift */; };
+		81DE797E2AA3B5CE00A588F6 /* Answer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81DE797D2AA3B5CE00A588F6 /* Answer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +53,10 @@
 		81D4327A2A9F774E008DC501 /* AnimalLessonUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AnimalLessonUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		81D4327E2A9F774E008DC501 /* AnimalLessonUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalLessonUITests.swift; sourceTree = "<group>"; };
 		81D432802A9F774E008DC501 /* AnimalLessonUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalLessonUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		81DE79752AA39FE100A588F6 /* QuestionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionsViewController.swift; sourceTree = "<group>"; };
+		81DE79772AA3A4EB00A588F6 /* FinalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinalViewController.swift; sourceTree = "<group>"; };
+		81DE797B2AA3B5B400A588F6 /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
+		81DE797D2AA3B5CE00A588F6 /* Answer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Answer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +106,7 @@
 		81D4325C2A9F774A008DC501 /* AnimalLesson */ = {
 			isa = PBXGroup;
 			children = (
+				81DE797A2AA3B59C00A588F6 /* Models */,
 				81D432922A9F785C008DC501 /* Supporting Files */,
 				81D432932A9F78A6008DC501 /* Controlleres */,
 				81D4328D2A9F7765008DC501 /* Storyboard */,
@@ -147,6 +156,8 @@
 			isa = PBXGroup;
 			children = (
 				81D432612A9F774A008DC501 /* ViewController.swift */,
+				81DE79752AA39FE100A588F6 /* QuestionsViewController.swift */,
+				81DE79772AA3A4EB00A588F6 /* FinalViewController.swift */,
 			);
 			path = Controlleres;
 			sourceTree = "<group>";
@@ -157,6 +168,15 @@
 				81D432662A9F774E008DC501 /* Assets.xcassets */,
 			);
 			path = Resourses;
+			sourceTree = "<group>";
+		};
+		81DE797A2AA3B59C00A588F6 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				81DE797B2AA3B5B400A588F6 /* Question.swift */,
+				81DE797D2AA3B5CE00A588F6 /* Answer.swift */,
+			);
+			name = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -290,8 +310,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				81DE79782AA3A4EB00A588F6 /* FinalViewController.swift in Sources */,
 				81D432902A9F784F008DC501 /* AppDelegate.swift in Sources */,
 				81D432622A9F774A008DC501 /* ViewController.swift in Sources */,
+				81DE797E2AA3B5CE00A588F6 /* Answer.swift in Sources */,
+				81DE797C2AA3B5B400A588F6 /* Question.swift in Sources */,
+				81DE79762AA39FE100A588F6 /* QuestionsViewController.swift in Sources */,
 				81D432912A9F784F008DC501 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -476,12 +500,12 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 8UJ348LDS3;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = AnimalLesson/Info.plist;
+				INFOPLIST_FILE = "AnimalLesson/Supporting Files/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -504,12 +528,12 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 8UJ348LDS3;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = AnimalLesson/Info.plist;
+				INFOPLIST_FILE = "AnimalLesson/Supporting Files/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
