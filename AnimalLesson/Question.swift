@@ -1,8 +1,12 @@
-//
-//  Question.swift
-//  AnimalLesson
-//
-//  Created by Дима Кожемякин on 02.09.2023.
-//
+enum RensponType {
+    case single
+    case multiple
+    case range
+}
 
-import Foundation
+
+struct Questions {
+    let text: String
+    let type: RensponType
+    let answer: [Answer]
+}
